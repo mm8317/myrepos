@@ -1,0 +1,8 @@
+from django.contrib import admin
+from . import models
+# Register your models here.
+
+class ContactusAdmin(admin.ModelAdmin):
+    list_display = ['title', 'email', 'full_name', 'message', 'created_at']
+    list_editable = ['email']
+admin.site.register(models.ContactUs, ContactusAdmin)

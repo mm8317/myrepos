@@ -1,0 +1,41 @@
+body{
+    background-color: #5f9ea0;
+}
+#summary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    margin: 10px auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+}
+#summary h2{
+    color: #000000;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+#summary  article img{
+    width: 200px;
+    border: 4px solid #ffffff;
+    border-radius:20px;
+    transform: rotateZ(5deg);
+}
+#summary article div{
+    color: #ffffff;
+}
+#summary address{
+    color: #000000;
+    text-align: left;
+
+}
+main{
+    max-width: 1250px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block header_reference %}
+    <link rel="stylesheet" href="{% static 'blogs/index.css' %}">
+    <link rel="stylesheet" href="{% static 'blogs/all_post.css'%}">
+{% endblock %}
+
+{% block title %}
+   Login
+{% endblock %}
+{% block content %}
+	<h1>Login</h1>
+    <form action="" method="post">
+    {% csrf_token %}
+    {{ form_login.as_p }}
+    <button type="submit">Login</button>
+{% endblock %}
